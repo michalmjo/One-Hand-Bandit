@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+    height: 100vh;
+}
+
+.wrap-game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.table-game {
+    position: relative;
+}
+
+div.board {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 495px;
+    height: 200px;
+}
+
+.table {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.table div {
+    display: flex;
+    margin: 0 15px;
+    width: 135px;
+    height: 200px;
+    border: 5px solid rgb(155, 155, 155);
+    overflow: hidden;
+}
+
+.table div img {
+    /* object-fit: contain; */
+    object-position: 50% 50%;
+    object-fit: contain;
+    height: 200px;
+}
+
+div.lever {
+    position: absolute;
+    top: 60%;
+    right: -35px;
+}
+
+div.lever div.basis {
+    width: 45px;
+    height: 80px;
+    background-color: #00C5B1;
+}
+
+div.lever div.rod {
+    position: absolute;
+    top: -150%;
+    left: 15px;
+    width: 15px;
+    height: 120px;
+    background-color: #00C5B1;
+}
+
+div.lever div.circle {
+    position: absolute;
+    border-radius: 50%;
+    top: -180%;
+    left: -2px;
+    width: 50px;
+    height: 50px;
+    background-color: #4b4b4b;
+}
