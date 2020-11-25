@@ -7,6 +7,7 @@
 body {
     background-color: rgb(230, 230, 230);
     height: 100vh;
+    font-family: 'Sansita Swashed', cursive;
 }
 
 .wrap-game {
@@ -54,10 +55,23 @@ div.board {
     height: 200px;
 }
 
+/*  statistic */
+div.scoreTalbe {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    left: 10%;
+}
+
+div.scoreTalbe p {
+    text-shadow: 1px 1px rgb(4, 112, 28);
+}
+
 div.lever {
     position: absolute;
     top: 60%;
     right: -35px;
+    cursor: pointer;
 }
 
 div.lever div.basis {
@@ -85,6 +99,22 @@ div.lever div.circle {
     height: 50px;
     background-color: #4b4b4b;
     animation: rodCircle 1s ease-out;
+}
+
+div.lever div.circle::after {
+    content: "Spin";
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 50px;
+    color: #00C5B1;
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 14px;
 }
 
 @keyframes rodCircle {
