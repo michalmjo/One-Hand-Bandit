@@ -61,24 +61,31 @@
 
             <div class="board">
                 <div class="table">
-                    <div class="roll-table"><img src="./img/test.jpg" alt=""> </div>
-                    <div class="roll-table"><img src="./img/test.jpg" alt=""></div>
-                    <div class="roll-table"><img src="./img/test.jpg" alt=""></div>
+                    <div class="roll-table"></div>
+                    <div class="roll-table"></div>
+                    <div class="roll-table"></div>
                 </div>
             </div>
-            <div class="lever">
+            <div class="lever" id="start">
                 <div class="basis"></div>
                 <div class="rod"></div>
                 <div class="circle"></div>
             </div>
+            <div class="play">
+                <form action="">
+                    <label for="bid">Podaj Stawke </label>
+                    <input type="text" placeholder="Podaj Stawke" id="bid">
+                </form>
+            </div>
             <div class="scoreTalbe">
                 <div class="saldo">
-                    <p>Twoje środki przed kolejną grą to : <span>0</span></p>
+                    <p>Twoje środki przed kolejną grą to : <span class="wallet">0</span></p>
                 </div>
                 <div class="stats">
-                    <p>Gry: <span>0</span></p>
-                    <p>Wygrane: <span>0</span></p>
-                    <p>Przegrane: <span>0</span></p>
+                    <span class="result"></span>
+                    <p>Gry: <span class="number">0</span></p>
+                    <p>Wygrane: <span class="win">0</span></p>
+                    <p>Przegrane: <span class="losses">0</span></p>
                 </div>
             </div>
         </div>

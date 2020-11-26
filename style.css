@@ -44,16 +44,39 @@ div.board {
     margin: 0 15px;
     width: 135px;
     height: 200px;
-    border: 5px solid rgb(155, 155, 155);
+    border: 5px solid rgb(121, 121, 121);
     overflow: hidden;
 }
 
-.table div img {
-    /* object-fit: contain; */
+.table div.roll-table {
+    background-color: crimson;
+}
+
+/* .table div img {
     object-position: 50% 50%;
     object-fit: contain;
     height: 200px;
+} */
+
+/* bid */
+.bid {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
+
+.bid label,
+input {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.bid input {
+    padding: 5px;
+}
+
 
 /*  statistic */
 div.scoreTalbe {
