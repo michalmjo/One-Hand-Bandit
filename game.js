@@ -60,6 +60,5 @@ class Game {
             this.rod.classList.remove("run")
             this.circle.classList.remove("run")
         }, 1000)
-
     }
 }
