@@ -1,6 +1,6 @@
 class Draw {
     constructor() {
-        this.options = ['red', 'green', 'blue'];
+        this.options = ['./img/1.jpg', './img/2.jpg', './img/3.jpg'];
         let _result = this.drawResult();
         this.getDrawResult = () => _result;
     }
@@ -16,3 +16,4 @@ class Draw {
 }
 
 // const draw = new Draw();
+const test = new Draw();
