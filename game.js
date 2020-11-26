@@ -29,7 +29,7 @@ class Game {
         this.spanGame.textContent = stats[0]
         this.spanWin.textContent = stats[1]
         this.spanLosses.textContent = stats[2]
-        // this.inputBid.value = "";
+        this.inputBid.value = "";
     }
 
 
