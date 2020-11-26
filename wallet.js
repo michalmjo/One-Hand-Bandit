@@ -1,5 +1,5 @@
 class Wallet {
-    constructor() {
+    constructor(money) {
         let _money = money;
         this.getWalletValue = () => _money;
         this.checkCanPlay = value => {
@@ -24,4 +24,4 @@ class Wallet {
     }
 }
 
-const wallet = new Wallet(200);
+const wallet = new Wallet();
