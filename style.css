@@ -7,7 +7,8 @@
 body {
     background-color: rgb(230, 230, 230);
     height: 100vh;
-    font-family: 'Sansita Swashed', cursive;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
 }
 
 .wrap-game {
@@ -71,6 +72,8 @@ div.board {
     text-align: center;
 }
 
+/* input */
+
 .play label,
 input {
     font-size: 18px;
@@ -78,9 +81,59 @@ input {
 }
 
 .play input {
-    padding: 5px;
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid grey;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
 }
 
+.play input:placeholder {
+    color: transparent;
+}
+
+.play input:placeholder-shown~.form-label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 7px;
+}
+
+.form-label {
+    position: absolute;
+    top: -15px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: grey;
+}
+
+.play input:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, , #11998e #38ef7d);
+    border-image-slice: 1;
+}
+
+.play input:focus~.form-label {
+    position: absolute;
+    top: -10px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+}
+
+.play input:required,
+.form-label:invalid {
+    box-shadow: none;
+}
 
 /*  statistic */
 div.scoreTalbe {
@@ -146,8 +199,8 @@ div.lever div.circle::after {
     line-height: 50px;
     color: #00C5B1;
     text-align: center;
-    font-family: 'Sansita Swashed', cursive;
-    font-size: 14px;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
 }
 
 @keyframes rodCircle {
@@ -193,5 +246,5 @@ div.lever div.circle::after {
 .infoText p {
     color: white;
     text-shadow: 1px 1px crimson;
-    font-size: 18px;
+    font-size: 20px;
 }
