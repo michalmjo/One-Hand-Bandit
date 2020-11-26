@@ -181,3 +181,17 @@ div.lever div.circle::after {
         height: 120px;
     }
 }
+
+.infoText {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.infoText p {
+    color: white;
+    text-shadow: 1px 1px crimson;
+    font-size: 18px;
+}

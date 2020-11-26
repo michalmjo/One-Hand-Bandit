@@ -12,6 +12,7 @@ class Game {
         this.spanLosses = document.querySelector(".stats .losses")
         this.rod = document.querySelector('.rod')
         this.circle = document.querySelector('.circle')
+        this.textInfo = document.querySelector('div.infoText p')
         this.render();
     }
 
@@ -37,7 +38,12 @@ class Game {
         if (this.inputBid.value < 1) return alert(`Kwota która chcesz grac jest za nała`)
         const bid = Math.floor(this.inputBid.value);
         if (!this.wallet.checkCanPlay(bid)) {
-            return alert(`masz za mało środków lub podana została nieprawidłowa wartość`)
+            this.textInfo.textContent = "Masz za mało środków lub podana została nieprawidłowa wartość"
+            setTimeout(() => {
+                this.textInfo.textContent = ""
+            }, 3000)
+            return
+
         }
         this.wallet.changeWallet(bid, "-");
         this.startAnimation()
