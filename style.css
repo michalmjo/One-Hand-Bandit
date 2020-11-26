@@ -48,8 +48,11 @@ div.board {
     overflow: hidden;
 }
 
-.table div.roll-table {
+/* .table div.roll-table {
     background-color: crimson;
+} */
+.result {
+    color: black;
 }
 
 .table div img {
@@ -111,6 +114,9 @@ div.lever div.rod {
     width: 15px;
     height: 120px;
     background-color: #00C5B1;
+}
+
+div.rod.run {
     animation: rodLever 1s ease-in;
 }
 
@@ -122,6 +128,9 @@ div.lever div.circle {
     width: 50px;
     height: 50px;
     background-color: #4b4b4b;
+}
+
+div.circle.run {
     animation: rodCircle 1s ease-out;
 }
 
