@@ -14,6 +14,3 @@ class Draw {
         return colors;
     }
 }
-
-// const draw = new Draw();
-const test = new Draw();
